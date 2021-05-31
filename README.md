@@ -1,27 +1,31 @@
 # xorg-server-1.20.8_source_configuration
 ubuntu 20.04 , focal , linux , xorg-server
 
-$$ cd ~/
+$ cd ~/
 
-$$ git clone https://github.com/Griggorii/xorg-server-1.20.8_source_configuration.git
+$ git clone https://github.com/Griggorii/xorg-server-1.20.8_source_configuration.git
 
-$$ cd xorg-server-1.20.8_source_configuration
+$ cd xorg-server-1.20.8_source_configuration
 
-$$ sudo tar xvpf xorg_include.tar.xz -C /
+$ sudo tar xvpf xorg_include.tar.xz -C /
 
-$$ sudo apt --reinstall install libaudit-dev libbsd-dev libdbus-1-dev libdmx-dev libdrm-dev libegl1-mesa-dev libepoxy-dev libgbm-dev libgcrypt-dev libgl1-mesa-dev libpciaccess-dev libpixman-1-dev libselinux1-dev libsystemd-dev libudev-dev libunwind-dev libwayland-dev libx11-dev libx11-xcb-dev libxau-dev libxaw7-dev libxcb-glx0-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-shm0-dev libxcb-util0-dev libxcb-xf86dri0-dev libxcb-xkb-dev libxcb-xv0-dev libxcb1-dev libxdmcp-dev libxext-dev libxfixes-dev libxfont-dev libxi-dev libxinerama-dev libxkbfile-dev libxmu-dev libxmuu-dev libxpm-dev libxrender-dev libxres-dev libxshmfence-dev libxt-dev libxtst-dev libxv-dev lsb-release mesa-common-dev nettle-dev wayland-protocols x11-xkb-utils x11proto-dev xauth xfonts-utils xkb-data xtrans-dev xutils-dev libxcb-xinput-dev libtirpc-dev libfontenc-dev x11proto-xext-dev libegl-dev libgles-dev libglvnd-dev libglx-dev libxkbfile-dev make
+$ sudo apt --reinstall install libaudit-dev libbsd-dev libdbus-1-dev libdmx-dev libdrm-dev libegl1-mesa-dev libepoxy-dev libgbm-dev libgcrypt-dev libgl1-mesa-dev libpciaccess-dev libpixman-1-dev libselinux1-dev libsystemd-dev libudev-dev libunwind-dev libwayland-dev libx11-dev libx11-xcb-dev libxau-dev libxaw7-dev libxcb-glx0-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-randr0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-shm0-dev libxcb-util0-dev libxcb-xf86dri0-dev libxcb-xkb-dev libxcb-xv0-dev libxcb1-dev libxdmcp-dev libxext-dev libxfixes-dev libxfont-dev libxi-dev libxinerama-dev libxkbfile-dev libxmu-dev libxmuu-dev libxpm-dev libxrender-dev libxres-dev libxshmfence-dev libxt-dev libxtst-dev libxv-dev lsb-release mesa-common-dev nettle-dev wayland-protocols x11-xkb-utils x11proto-dev xauth xfonts-utils xkb-data xtrans-dev xutils-dev libxcb-xinput-dev libtirpc-dev libfontenc-dev x11proto-xext-dev libegl-dev libgles-dev libglvnd-dev libglx-dev libxkbfile-dev make ninja-build meson -y
 
-$$ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1 /usr/lib/x86_64-linux-gnu/libxcb-sync.so
+$ sudo apt install xserver-xspice libspice-protocol-dev xorg-sgml-doctools x11proto-dev x11proto-core-dev libxdmcp-dev xtrans-dev libpthread-stubs0-dev libxcb1-dev x11proto-xext-dev libxdamage-dev libgles-dev libglx-dev libgl-dev libegl-dev libopengl-dev icu-devtools libdatrie-dev libthai-dev libpango1.0-dev librsvg2-dev libx11-xcb-dev libxcb-glx0-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-sync-dev libxcb-present-dev libxfixes-dev libxkbfile-dev libjpeg-turbo8-dev libdrm-dev libxshmfence-dev libfribidi-dev libpng-dev libsepol1-dev libx11-dev libxcb-dri3-dev libffi-dev libxcb-shm0-dev libgraphite2-dev libxcb-dri2-0-dev libexpat1-dev uuid-dev libxext-dev x11proto-xf86vidmode-dev libgif-dev libjpeg8-dev libxrender-dev libicu-dev libblkid-dev libpcre2-dev libselinux1-dev libpcre3-dev libxxf86vm-dev libjpeg-dev libwayland-dev libfreetype6-dev mesa-common-dev libmount-dev libfontconfig1-dev libxfont-dev libglvnd-dev libglib2.0-dev libgl1-mesa-dev libcairo2-dev libxft-dev libegl1-mesa-dev libharfbuzz-dev libglvnd-core-dev libepoxy-dev libgdk-pixbuf2.0-dev libbsd-dev libpciaccess-dev libgcrypt20-dev libgpg-error-dev nettle-dev libsystemd-dev xmlto -y
 
-$$ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0 /usr/lib/x86_64-linux-gnu/libxcb-sync.so
+$ sudo apt install libcap-ng-dev libdmx1 libxcb-util-dev libxcb-xf86dri0 libxmu-headers libaudit-dev libcap-ng-dev libdmx-dev libdmx1 libxaw7-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-render-util0-dev libxcb-util-dev libxcb-util0-dev libxcb-xf86dri0 libxcb-xf86dri0-dev libxcb-xinput-dev libxcb-xkb-dev libxcb-xv0-dev libxmu-dev libxmu-headers libxmuu-dev libxpm-dev libxres-dev libxt-dev libxv-dev xutils-dev -y
 
-$$ tar xvpf xorg-server-1.20.8.tar.xz -C /tmp
+$ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1 /usr/lib/x86_64-linux-gnu/libxcb-sync.so
 
-$$ cd /tmp/xorg-server-1.20.8
+$ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0 /usr/lib/x86_64-linux-gnu/libxcb-sync.so
 
-$$ make -j4
+$ tar xvpf xorg-server-1.20.8.tar.xz -C /tmp
 
-$$ sudo make install
+$ cd /tmp/xorg-server-1.20.8
+
+$ make -j4
+
+$ sudo make install
 
 # xorg-server-1.20.8 , waylandxorg-server , xorg-server-1.20.8 , objective , replace find include <pciaccess.h> to <xorg/pciaccess.h> , danger x11 session priority only wayland
 
