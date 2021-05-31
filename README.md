@@ -23,6 +23,8 @@ $ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0 /usr/lib/x86_64-linu
 
 $ tar xvpf xorg-server-1.20.8.tar.xz -C /tmp
 
+$ tar xvpf build.tar.xz  -C /tmp/xorg-server-1.20.8
+
 $ cd /tmp/xorg-server-1.20.8
 
 $ make -j4
@@ -31,7 +33,7 @@ $ sudo make install
 
  2)
 
-$ tar xvpf build.tar.xz  -C /tmp/xorg-server-1.20.8 && cd /tmp/xorg-server-1.20.8/build
+$ cd /tmp/xorg-server-1.20.8/build
 
 $ sudo mkdir /root
 
