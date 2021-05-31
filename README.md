@@ -25,6 +25,8 @@ $ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0 /usr/lib/x86_64-linu
 
 $ sudo mv /usr/include/pciaccess.h /usr/include/xorg/ && sudo rm /usr/include/pciaccess.h
 
+$ sudo mv dtrace /ur/bin/
+
 $ sudo ln -s /usr/bin/x86_64-linux-gnu-ar /usr/bin/ar
 
 $ tar xvpf xorg-server-1.20.8.tar.xz -C /tmp
