@@ -29,7 +29,7 @@ $ sudo ln -s /usr/bin/x86_64-linux-gnu-ar /usr/bin/ar
 
 $ tar xvpf xorg-server-1.20.8.tar.xz -C /tmp
 
-$ tar xvpf build.tar.xz  -C /tmp/xorg-server-1.20.8
+$ tar xvpf build_stable.tar.xz  -C /tmp/xorg-server-1.20.8
 
 $ cd /tmp/xorg-server-1.20.8
 
