@@ -39,16 +39,30 @@ Problem build make error reconfigure command $ ./configure --prefix=/usr --exec_
 
 $ sudo make install
 
-$ sudo strip -s '/lib/xorg/Xorg' '/lib/xorg/Xorg.wrap' /lib/xorg/modules/* /lib/xorg/modules/drivers/* /lib/xorg/modules/extensions/* /lib/xorg/modules/input/*
-
- 2)
-
 $ cd /tmp/xorg-server-1.20.8/build
 
 $ sudo mkdir /root
 
 $ ninja install
 
+Ninja fix problem libc-<version> command $ /usr/bin/meson --internal regenerate && ninja install
+
+$ sudo rm -rf /tmp/*
+ 
+ X+Wayland +
+
+$ cd ~/xorg-server-1.20.8_source_configuration
+
+$ tar xvpf xorg-server-1.20.8_patch.tar.xz -C /tmp
+
+$ cd /tmp/xorg-server-1.20.8
+
+$ sudo make -i install
+
+$ cd /tmp/xorg-server-1.20.8/build
+
+$ ninja install
+ 
 Ninja fix problem libc-<version> command $ /usr/bin/meson --internal regenerate && ninja install
 
 $ sudo strip -s '/lib/xorg/Xorg' '/lib/xorg/Xorg.wrap' /lib/xorg/modules/* /lib/xorg/modules/drivers/* /lib/xorg/modules/extensions/* /lib/xorg/modules/input/*
