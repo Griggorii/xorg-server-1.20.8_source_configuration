@@ -19,7 +19,7 @@ $ sudo apt install xserver-xspice libspice-protocol-dev xorg-sgml-doctools x11pr
 
 $ sudo apt install libcap-ng-dev libdmx1 libxcb-xf86dri0 libxmu-headers libaudit-dev libcap-ng-dev libdmx-dev libdmx1 libxaw7-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-render-util0-dev libxcb-util0-dev libxcb-xf86dri0 libxcb-xf86dri0-dev libxcb-xinput-dev libxcb-xkb-dev libxcb-xv0-dev libxmu-dev libxmu-headers libxmuu-dev libxpm-dev libxres-dev libxt-dev libxv-dev xutils-dev -y
 
-$ sudo apt install libpciaccess-dev -y
+$ sudo apt --reinstall install libpciaccess-dev -y
 
 $ sudo libegl-dev libgles-dev libglx-dev libgles-dev libglx-dev libegl-dev libopengl-dev libjpeg-turbo8-dev libjpeg8-dev libxcb-util-dev
 
