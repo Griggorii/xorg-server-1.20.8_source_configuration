@@ -39,6 +39,8 @@ $ cd /tmp/xorg-server-1.20.8
 
 $ make -j4
 
+Problem build make error reconfigure command $ ./configure --prefix=/usr --exec_prefix=/usr
+
 $ sudo make install
 
 $ sudo strip -s '/lib/xorg/Xorg' '/lib/xorg/Xorg.wrap' /lib/xorg/modules/* /lib/xorg/modules/drivers/* /lib/xorg/modules/extensions/* /lib/xorg/modules/input/*
