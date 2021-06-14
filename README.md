@@ -49,7 +49,7 @@ $ sudo mkdir /root
 
 $ ninja install
 
-Ninja fix problem libc-<version> command $ meson --reconfigure && ninja install
+Ninja fix problem libc-<version> command $ /usr/bin/meson --internal regenerate && ninja install
 
 $ sudo strip -s '/lib/xorg/Xorg' '/lib/xorg/Xorg.wrap' /lib/xorg/modules/* /lib/xorg/modules/drivers/* /lib/xorg/modules/extensions/* /lib/xorg/modules/input/*
 
