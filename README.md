@@ -17,7 +17,7 @@ $ sudo apt update && sudo apt --reinstall install libaudit-dev libbsd-dev libdbu
 
 $ sudo apt --reinstall install libpciaccess-dev -y
 
-$ sudo libegl-dev libgles-dev libglx-dev libgles-dev libglx-dev libegl-dev libopengl-dev libjpeg-turbo8-dev libjpeg8-dev libxcb-util-dev
+$ sudo apt install libegl-dev libgles-dev libglx-dev libgles-dev libglx-dev libegl-dev libopengl-dev libjpeg-turbo8-dev libjpeg8-dev libxcb-util-dev -y
 
 $ sudo ln -s /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1 /usr/lib/x86_64-linux-gnu/libxcb-sync.so
 
